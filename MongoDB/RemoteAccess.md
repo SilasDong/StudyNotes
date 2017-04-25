@@ -10,7 +10,7 @@ net:
 net:
     bindIp: 127.0.0.1,公网ip
 ```
->完成mongod.cfg
+>完整mongod.cfg
 ```
 systemLog:
     destination: file
