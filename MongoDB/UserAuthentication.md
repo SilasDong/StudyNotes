@@ -53,7 +53,7 @@ storage:
 security:
     authorization: enabled
 ```
-4. 此时在用Robomongo登录会报错，点击Manage Connections，edit之前创建的MyMongoDB,在Authentication中s输入第二步骤中的user和pwd,Test后没有问题Save，再次连接，userAdminAnyDatabase权限只有编辑用户的权限，没有操作集合的权限
+4. 此时在用Robomongo登录会报错，点击Manage Connections，edit之前创建的MyMongoDB,在Authentication中输入第二步骤中的user和pwd,Test后没有问题Save，再次连接，userAdminAnyDatabase权限只有编辑用户的权限，没有操作集合的权限
 5. 重新在开启Mongo Shell，连接成功后show dbs，报错，因为还没有认证
 ```bat
 > show dbs
@@ -73,7 +73,7 @@ shellHelper@src/mongo/shell/utils.js:659:15
 ```bat
 > use admin
 switched to db admin
-> db.auth('dba','huilian26')
+> db.auth('dba','123456')
 1
 ```
 7. 创建读写数据库用户权限
