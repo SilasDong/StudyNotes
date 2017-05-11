@@ -6,5 +6,5 @@
 3. [第三章：远程访问](./MongoDB/RemoteAccess.md)
 
 ## 二、oracle
-1. [# oracle 创建开发者权限用户随笔
+1. [oracle 创建开发者权限用户随笔
 ](./Oracel/创建普通开发权限用户.md)
