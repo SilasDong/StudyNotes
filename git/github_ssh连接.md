@@ -25,3 +25,5 @@ $ ssh-agent bash
 ```sh
 sh -T git@github.com
 ```
+
+**[参考](https://segmentfault.com/a/1190000002645623)**
