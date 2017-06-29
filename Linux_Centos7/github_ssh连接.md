@@ -24,7 +24,7 @@ $ ssh-add ~/.ssh/id_rsa
 
 ## 5、测试
 ```sh
-sh -T git@github.com
+ssh -T git@github.com
 ```
 
 **[参考](https://segmentfault.com/a/1190000002645623)**
