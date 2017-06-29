@@ -17,6 +17,7 @@ ssh-keygen -t rsa -C "test@gmail.com"
 
 ```sh
 $ ssh-agent bash
+$ ssh-add ~/.ssh/id_rsa
 ```
 
 ## 4、登陆Github, 添加 ssh
