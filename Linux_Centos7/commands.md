@@ -33,3 +33,4 @@ $ sudo make install
 14. Ctrl-T 用于颠倒光标所在处字符和前一个字符的位置
 15. Ctrl-J 相当于回车键
 16. Ctrl-z 终止这个程序，bg 1 放到后台运行，fg 1 放在前台运行，jobs  命令查看正在运行的任务
+17. sudo find ./ -type f -size +1000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }' 文件搜索
