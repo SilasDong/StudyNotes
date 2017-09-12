@@ -21,6 +21,7 @@ $ ssh-add ~/.ssh/id_rsa
 ```
 
 ## 4、登陆Github, 添加 ssh
+1. 新建【New SSH key】title 任意，content，复制 cat ~/.ssh/id_rsa.pub内容，保存
 
 ## 5、测试
 ```sh
