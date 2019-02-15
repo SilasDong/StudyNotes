@@ -196,7 +196,7 @@ chkconfig --level 345 mysql on
 ## 9、数据库普通用户授权
 ```sh
 # 全部授权
-grant execute,select,update,delete,insert,show view,lock tables,trigger on xcd_p_demo.* to web@'127.0.0.1' identified by 'xinchidao888' with grant option;
+grant execute,select,update,delete,insert,show view,lock tables,trigger on xcd_p_demo.* to web@'127.0.0.1' identified by '123456' with grant option;
 flush privileges;
 use mysql;
 select host,user from user;
