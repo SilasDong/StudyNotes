@@ -153,7 +153,7 @@ mkdir -p /data/dbfiles/mysql/tmp
 chown mysql:mysql /data/dbfiles/mysql/tmp
 
 # /data/dblogs/mysql/mysql.err 查看是否有错误信息
-bin/mysqld_safe --user=mysql
+bin/mysqld_safe --user=mysql | &
 
 # 使用临时密码登录 t4_YtnM9alwc
 bin/mysql --user=root -p
@@ -189,11 +189,22 @@ chkconfig --add mysql
 chkconfig --level 345 mysql on
 ```
 
-## 8、添加服务器端口
+## 8、启停MySQL服务
+> 上面的方式启动后关闭linux窗口后，mysql会关闭，使用service mysql restart重启一下
+```sh
+service mysql start|stop|restart|status
+```
+
+## 9、设置mysql软连接
+```sh
+ln -fs /usr/local/mysql/bin/mysql /usr/bin/mysql
+```
+
+## 10、添加服务器端口
 > 开放云服务器端口，linux有防火墙的话 也要把端口添加进去
 
 
-## 9、数据库普通用户授权
+## 11、数据库普通用户授权
 ```sh
 # 全部授权
 grant execute,select,update,delete,insert,show view,lock tables,trigger on xcd_p_demo.* to web@'127.0.0.1' identified by '123456' with grant option;
