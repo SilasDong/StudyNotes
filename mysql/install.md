@@ -168,6 +168,7 @@ select host,user from user;
 
 ## 6、配置环境变量
 ```sh
+vim /etc/profile
 export PATH=/usr/local/mysql/bin:$PATH
 source /etc/profile
 ```
