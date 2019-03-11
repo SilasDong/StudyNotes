@@ -213,6 +213,12 @@ flush privileges;
 use mysql;
 select host,user from user;
 
+# 授权开发者账户
+grant create,alter,drop,references,create temporary tables,index, create view, show view, create routine,alter routine, execute on xcd_p_demo.* to develop@'%' identified by '123456' with grant option;
+flush privileges;
+use mysql;
+select host,user from user;
+
 # 单个授权
 grant show view on my_test.* web@'127.0.0.1';
 grant lock tables on my_test.* web@'127.0.0.1';
