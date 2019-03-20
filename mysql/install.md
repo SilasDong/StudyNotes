@@ -227,3 +227,13 @@ grant trigger on my_test.* to web@'127.0.0.1';
 函数无法创建，执行以下语句
 set global log_bin_trust_function_creators = 1;
 ```
+
+## 11、数据库备份
+```sh
+mysqldump -hlocalhost -P3306 -uroot -ppassword dbname > bak.sql
+
+# 查看正在运行的语句
+show full processlist 
+# 根据id（如：21274），停止正则运行的语句
+kill 21274
+```
