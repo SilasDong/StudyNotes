@@ -237,3 +237,9 @@ show full processlist
 # 根据id（如：21274），停止正则运行的语句
 kill 21274
 ```
+
+## 12、Waiting for table metadata lock的解决方法
+```sh
+select * from information_schema.innodb_trx ## 查看正在运行的事务
+kill x_mysql_thread_id
+```
