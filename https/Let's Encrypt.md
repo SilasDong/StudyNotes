@@ -1,10 +1,10 @@
 
 # Centos安装教程
 
-### 1.sudo yum install epel-release
-### 4.sudo yum -y install yum-utils
-### 5.sudo yum-config-manager --enable epel
-### 6.wget https://dl.eff.org/certbot-auto  #（cd soft）
+### 1.yum install epel-release
+### 4.yum -y install yum-utils
+### 5.yum-config-manager --enable epel
+### 6.wget https://dl.eff.org/certbot-auto  #（cd /usr/local/bin/）
 ### 7.chmod a+x certbot-auto
 
 ### 8.sudo vi /usr/local/nginx/conf/conf.d/m.udd08.com_8112_8109.conf
