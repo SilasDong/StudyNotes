@@ -51,5 +51,6 @@ echo 'complate'
 ### 5.设置crontab定时器
 ```sh
 vim /etc/crontab
-30 03 01 */2 * root sh /home/silas/script/update_https_certificates.sh
+# 30 03 01 */2 * root sh /home/silas/script/update_https_certificates.sh
+0 0 1 * * root sh /home/silas/script/update_https_certificates.sh
 ```
